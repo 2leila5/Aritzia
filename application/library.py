@@ -9,9 +9,8 @@ import matplotlib.pyplot as plt
 
 # setting the path to the directory containing the pics
 path = "Images/Dark_winter/Aritzia"
-# path2 = "Images/Dark_winter/Aritzia"
-# path3 =
-
+path2 = "Images/Preppy"
+path3 = "Images/lounge wear"
 
 # appending the pics to the training data list
 training_data = []
@@ -21,20 +20,21 @@ for img in os.listdir(path):
     pic = cv2.resize(pic, (80, 80))
     training_data.append([pic])
 
-# training_data2 = []
-# for img in os.listdir(path2):
-#     pic = cv2.imread(os.path.join(path2,img))
-#     pic = cv2.cvtColor(pic,cv2.COLOR_BGR2RGB)
-#     pic = cv2.resize(pic,(80,80))
-#     training_data.append([pic])
-#
-# training_data3 = []
-# for img in os.listdir(path3):
-#     pic = cv2.imread(os.path.join(path3,img))
-#     pic = cv2.cvtColor(pic,cv2.COLOR_BGR2RGB)
-#     pic = cv2.resize(pic,(80,80))
-#     training_data.append([pic])
-#
+training_data2 = []
+for img in os.listdir(path2):
+    pic = cv2.imread(os.path.join(path2, img))
+    pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
+    pic = cv2.resize(pic, (80, 80))
+    training_data2.append([pic])
+
+training_data3 = []
+for img in os.listdir(path3):
+    pic = cv2.imread(os.path.join(path3, img))
+    pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
+    pic = cv2.resize(pic, (80, 80))
+    training_data3.append([pic])
+
+
 # #converting the list to numpy array and saving it to a file using #numpy.save
 # np.save(os.path.join(path3,'preppy'),np.array(training_data3))
 # np.save(os.path.join(path2,'dark_ac'),np.array(training_data2))
@@ -42,12 +42,21 @@ for img in os.listdir(path):
 
 
 def floral():
-    # print(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
     i = 0
-    while i < 3 :
+    while i < 3:
         i += 1
-        plt.imshow(np.array(random.choice(training_data)).reshape(80, 80, 3))
-# def dark_ac():
-#     plt.show(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
-# def preppy():
-#     plt.show(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
+        plt.imshow(np.array(random.choice(training_data)).reshape(80, 80, 3), , interpolation='nearest')
+    print("floral")
+
+def dark_ac():
+    i = 0
+    while i < 3:
+        i += 1
+        plt.imshow(np.array(random.choice(training_data2)).reshape(80, 80, 3))
+
+
+def preppy():
+    i = 0
+    while i < 3:
+        i += 1
+        plt.imshow(np.array(random.choice(training_data3)).reshape(80, 80, 3))
