@@ -1,7 +1,10 @@
 import os
 import io
+import random
+
+import numpy as np
 from google.cloud import vision
-import library
+from library import floral
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'aritzia_hack.json'
 client = vision.ImageAnnotatorClient()
@@ -21,11 +24,13 @@ image = vision.Image(content=content)
 
 response_label = client.label_detection(image=image)
 
-for image in loaded_images:
-    for label in response_label.label_annotations:
-        if (label.score > 0.86):
-            labels = [label.description.tostring]
-            print({'label': label.description, 'score': label.score})
-    if ("dress"  and "neck")  in labels :
-        plt.imshow(np.array(training_data[0]).reshape(80, 80, 3))
-
+for label in response_label.label_annotations:
+    if (label.score > 0.86):
+        labels = [label.description]
+        print({'label': label.description, 'score': label.score})
+if ("dress" and "neck") in labels:
+    floral()
+# elif("blazer" and "turtleneck") in labels:
+#     dark_ac()
+# elif("vest") in labels:
+#     preppy()
