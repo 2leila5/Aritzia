@@ -20,19 +20,19 @@ for img in os.listdir(path):
     pic = cv2.resize(pic, (80, 80))
     training_data.append([pic])
 
-training_data2 = []
-for img in os.listdir(path2):
-    pic = cv2.imread(os.path.join(path2, img))
-    pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
-    pic = cv2.resize(pic, (80, 80))
-    training_data2.append([pic])
-
-training_data3 = []
-for img in os.listdir(path3):
-    pic = cv2.imread(os.path.join(path3, img))
-    pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
-    pic = cv2.resize(pic, (80, 80))
-    training_data3.append([pic])
+# training_data2 = []
+# for img in os.listdir(path2):
+#     pic = cv2.imread(os.path.join(path2, img))
+#     pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
+#     pic = cv2.resize(pic, (80, 80))
+#     training_data2.append([pic])
+#
+# training_data3 = []
+# for img in os.listdir(path3):
+#     pic = cv2.imread(os.path.join(path3, img))
+#     pic = cv2.cvtColor(pic, cv2.COLOR_BGR2RGB)
+#     pic = cv2.resize(pic, (80, 80))
+#     training_data3.append([pic])
 
 
 # #converting the list to numpy array and saving it to a file using #numpy.save
@@ -45,18 +45,18 @@ def floral():
     i = 0
     while i < 3:
         i += 1
-        plt.imshow(np.array(random.choice(training_data)).reshape(80, 80, 3), , interpolation='nearest')
-    print("floral")
-
-def dark_ac():
-    i = 0
-    while i < 3:
-        i += 1
-        plt.imshow(np.array(random.choice(training_data2)).reshape(80, 80, 3))
+        plt.imshow(np.array(random.choice(training_data)).reshape(80, 80, 3), interpolation='nearest')
 
 
-def preppy():
-    i = 0
-    while i < 3:
-        i += 1
-        plt.imshow(np.array(random.choice(training_data3)).reshape(80, 80, 3))
+# def dark_ac():
+#     i = 0
+#     while i < 3:
+#         i += 1
+#         plt.imshow(np.array(random.choice(training_data2)).reshape(80, 80, 3))
+#
+#
+# def preppy():
+#     i = 0
+#     while i < 3:
+#         i += 1
+#         plt.imshow(np.array(random.choice(training_data3)).reshape(80, 80, 3))

@@ -8,7 +8,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'aritzia_hack.json'
 client = vision.ImageAnnotatorClient()
 
 # image = vision.Image()
-# image.source.image_uri = "aritzia_hack.json"
+
 
 
 # The name of the image file to annotate
