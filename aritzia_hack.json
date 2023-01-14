@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "aritzia-374707",
+  "private_key_id": "f33b208b7d503b73cde75975120dbb42a618075d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC8CcuCdKJbdpeZ\nD4A+Vpor1G+jI1RyQKAzGG2gTDrlxO6MszJGNX6xNkosSgex2L4Yt1/k2EsC4f0O\n7GAhKRgikyRV0ilfnO/VuOz7sythcgjuUUuWoCMNwz1GlOQuJ98hkigRYvkdhv0U\n7I2aVWrb5cRzh0OEMdYMze5yrXEkijfnBcB4tsgqrr3QCSwxJNo+gp1e+D2gtBEQ\nxSsBACFG/e9xAVKA9qGj2iclrKZfYkhU4xfnOTi1gnn7JqVy2xsuPDGuh8wOQuaH\nXiMrfT0HRrVj1Xu3ZwXpuTsGCwi8w36B7GoLIpIeM2e2asJZtGcClEMnKeZxUSsX\nbOSV5GZFAgMBAAECggEAPAJYOzrjsZLIUKWcxMg4jXJPal3VDl1Hgubx3W1Wgot1\nodtyWOurkfyEcVvy1rQX/qVO6iaI0dOzQfb3ur11oVsaBnV6lLPt6mQI5U7JsmCF\nLyEsoVZbuYGsZYEQzRYWZI1TUjEm1WCGFg5kJnPKFYFfT4tEZcTNzepOhbSKXiFd\nbuuIrJVLofaScf2UNSyLRygRp/iHo/+QUx61NJ0bfCZmBilkUGXQm/LjkSI6hhXE\nU8qsXPLUPVx1akv8b3nybZ9bx69PUZJV50LeqLwMW6THVCzY4XBvAi86IlcPO9R+\nA7l+9cWXtRPhw06hkA/Xl8G38XNG4bbVdLNSuh3VpQKBgQDy+ETwF6JJYy25rc1k\nmEoJTLuV0x38rpjAIsnK7a+L8+4ELI9E8vKcLTtAuU4JNKUttkhBoFtzTgmsHpzg\nxLYQ38T6UkZljdqYrhP0yKKKLblo8hcyCyLs2OhWPT66kgudo/lSXF8NLzPN1rth\nLXTgAuBrsipSNdOjEaqhde6fawKBgQDGH171wkECcSkN6zoAoFlDJcGu0WLFeWSk\nYszfGTLKNd8EnA3ywG5G4H2jPNHSOT1TS9Z7EZ6vChJubdWinFGLz6llOSND8xBd\nsTsgf6JYLfUbRtcDDoZoqs4Gj1QsvaBXvUl2Qg2p1140xNaAEgZrbU7deh/NjXDW\nG3aNbbntDwKBgQCCnyhorzwHGjO97AtM9nZvE3qRrKMlcjQar1kvKKNEqUofolkP\np1D413RQco7achwPPD0SUwR3M9ANYZPTXs3GupZqQQspk56ekI+X/LktcjGIkwYX\nWFdZX69glaKAqP1nrXzfY1uSefruwW+Rad+4grNmEq2f7uIte9Tw4rb7qwKBgQCS\nU0scMYs4FYGf0RJ2sfcbO8CPr//GH4EwU/RB9edoJ19+lQ9MMcmAuX6xWFMTc8kS\nQxm2rW3Ik6THQIGfZtpna0kOBKRCJDv7JtGnj/zEKbU0nx5gGJM2rKgbejJOFQNe\nqeOe3uwee30Ndi+CSU3Ke+Hae78PXp5u07u8esTuCwKBgQCL5BT+2e4Rb4xs9jyq\n1grzl87GRr1iOHkNpWucQTY6W+Nmna6LBLObFWispbLdRENIkBz91zC5z6vHWBmj\nMwlOnRZev46myzlt727Wd0qD20mkTBzh7XijUdvQWb/hh1+O0ZNh5GyV8AY6zxV8\nUT4N53PUzpk1PEkgWOBBLSSmmA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "aritzia-hack@aritzia-374707.iam.gserviceaccount.com",
+  "client_id": "103112012191406481726",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/aritzia-hack%40aritzia-374707.iam.gserviceaccount.com"
+}
