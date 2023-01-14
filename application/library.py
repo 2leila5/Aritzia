@@ -1,5 +1,5 @@
 import os
-from random import random
+import random
 
 import cv2
 import inline as inline
@@ -8,10 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # setting the path to the directory containing the pics
-path = "/Users/leila/PycharmProjects/Aritzia/Images/lounge wear"
-# path2 = ./Images/lounge
+path = "Images/Dark_winter/Aritzia"
+# path2 = "Images/Dark_winter/Aritzia"
 # path3 =
-
 
 
 # appending the pics to the training data list
@@ -39,12 +38,15 @@ for img in os.listdir(path):
 # #converting the list to numpy array and saving it to a file using #numpy.save
 # np.save(os.path.join(path3,'preppy'),np.array(training_data3))
 # np.save(os.path.join(path2,'dark_ac'),np.array(training_data2))
-np.save(os.path.join(path, 'floral'), np.array(training_data))
-
+# np.save(os.path.join(path, 'floral'), np.array(training_data))
 
 
 def floral():
-    plt.show(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
+    # print(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
+    i = 0
+    while i < 3 :
+        i += 1
+        plt.imshow(np.array(random.choice(training_data)).reshape(80, 80, 3))
 # def dark_ac():
 #     plt.show(np.array(random.choices(training_data, k=3)).reshape(80, 80, 3))
 # def preppy():

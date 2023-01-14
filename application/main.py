@@ -1,8 +1,6 @@
 import os
 import io
-import random
 
-import numpy as np
 from google.cloud import vision
 from library import floral
 
@@ -24,11 +22,13 @@ image = vision.Image(content=content)
 
 response_label = client.label_detection(image=image)
 
+labels = set()
 for label in response_label.label_annotations:
     if (label.score > 0.86):
-        labels = [label.description]
+        labels.add(label.description)
         print({'label': label.description, 'score': label.score})
-if ("dress" and "neck") in labels:
+if ("Dress" in labels) and ("Neck" in labels):
+    print("here")
     floral()
 # elif("blazer" and "turtleneck") in labels:
 #     dark_ac()
